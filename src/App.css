@@ -38,13 +38,22 @@ body {
 }
 
 .intro-start {
-  text-align: center;
-  font-size: 24pt;
-  margin-top: 320px;
+  display: inline-block;
+  font-size: 16pt;
   color: #aa8d7a;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.495);
   border-radius: 20px;
+  border-style:dashed;
+  border-color: #aa8d7a9f;
+  padding: 16px 24px;
+  margin: 240px auto 0 auto;
 }
+
+.intro-start-wrapper {
+  text-align: center;
+}
+
+
 .header {
   padding: 12px 20px;
   background-color: #3a5c43;
