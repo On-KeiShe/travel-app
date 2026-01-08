@@ -5,8 +5,8 @@
 
 body {
   background-image: url("./assets/plane-backround.svg");
-  background-size: fit;
-  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family:
     Outfit,
     system-ui,
@@ -78,4 +78,77 @@ body {
   background-color: white;
   color: #aa8d7a;;
   text-decoration: underline;
+}
+
+.todo-container {
+  max-width: 760px;
+  margin: 100px auto 0 auto;
+  padding: 28px;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 24px;
+  border: 2px dashed #aa8d7a9f;
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 44pt;
+  color: #3a5c43;
+  text-shadow: 3px 3px 3px rgb(200, 200, 200);
+  margin-bottom: 18px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+.todo-input {
+  width: min(520px, 100%);
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 2px dashed #aa8d7a9f;
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: 14pt;
+  outline: none;
+  color: #3a5c43;
+}
+
+.todo-input::placeholder {
+  color: #aa8d7a;
+}
+
+.todo-button {
+  padding: 14px 22px;
+  border-radius: 18px;
+  border: none;
+  background-color: #3a5c43;
+  color: white;
+  font-size: 13pt;
+  cursor: pointer;
+}
+
+.todo-button:hover {
+  background-color: white;
+  color: #aa8d7a;
+  text-decoration: underline;
+}
+
+.todo-list {
+  list-style: none;
+  margin-top: 10px;
+  display: grid;
+  gap: 12px;
+}
+
+.todo-item {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px dashed #aa8d7a9f;
+  color: #3a5c43;
+  font-size: 14pt;
 }

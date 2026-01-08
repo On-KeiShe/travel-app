@@ -6,7 +6,6 @@ function ToDoList() {
 
   function addTask(event) {
     event.preventDefault();
-
     if (task === "") return;
 
     setTasks([...tasks, task]);
@@ -14,22 +13,27 @@ function ToDoList() {
   }
 
   return (
-    <div>
-      <h2>To Do</h2>
+    <div className="todo-container">
+      <h2 className="todo-title">To Do</h2>
 
-      <form onSubmit={addTask}>
+      <form className="todo-form" onSubmit={addTask}>
         <input
+          className="todo-input"
           value={task}
           onChange={(e) => setTask(e.target.value)}
           placeholder="Add a task"
         />
 
-        <button type="submit">Add</button>
+        <button className="todo-button" type="submit">
+          Add
+        </button>
       </form>
 
-      <ul>
+      <ul className="todo-list">
         {tasks.map((t, index) => (
-          <li key={index}>{t}</li>
+          <li className="todo-item" key={index}>
+            {t}
+          </li>
         ))}
       </ul>
     </div>
