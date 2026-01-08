@@ -14,7 +14,7 @@ function VirtualPostcard() {
       <h2 className="postcard-title">Virtual Postcard</h2>
 
       <img
-        src="/src/assets/postcard.svg"
+        src="/src/assets/postcard.png"
         alt="Postcard"
         className="postcard-image"
       />
