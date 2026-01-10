@@ -278,3 +278,103 @@ body {
   color: #aa8d7a;
   text-decoration: underline;
 }
+
+.weather-container {
+  max-width: 760px;
+  margin: 100px auto 0 auto;
+  padding: 28px;
+
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 24px;
+  border: 2px dashed #aa8d7a9f;
+
+  text-align: center;
+}
+
+.weather-title {
+  font-size: 44pt;
+  color: #3a5c43;
+  margin-bottom: 18px;
+  text-shadow: 3px 3px 3px rgb(200, 200, 200);
+}
+
+.weather-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.weather-input {
+  width: min(520px, 100%);
+  padding: 14px 18px;
+
+  border-radius: 18px;
+  border: 2px dashed #aa8d7a9f;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  font-size: 14pt;
+  font-family: inherit;
+  color: #3a5c43;
+
+  outline: none;
+}
+
+.weather-input::placeholder {
+  color: #aa8d7a;
+}
+
+.weather-button {
+  padding: 14px 22px;
+  border-radius: 18px;
+  border: none;
+
+  background-color: #3a5c43;
+  color: white;
+  font-size: 13pt;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.weather-button:hover {
+  background-color: white;
+  color: #aa8d7a;
+  text-decoration: underline;
+}
+
+.weather-message {
+  margin-top: 12px;
+  color: #aa8d7a;
+  font-size: 14pt;
+}
+
+.weather-card {
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 22px;
+
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 2px dashed #aa8d7a9f;
+}
+
+.weather-location {
+  color: #3a5c43;
+  font-size: 22pt;
+  margin-bottom: 10px;
+}
+
+.weather-row {
+  font-size: 14pt;
+  color: #3a5c43;
+  margin-top: 8px;
+}
+
+.weather-value {
+  color: #aa8d7a;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 4px 10px;
+}
