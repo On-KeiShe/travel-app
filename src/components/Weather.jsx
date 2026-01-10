@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { fetchCityCoordinates, fetchCurrentWeather } from "../WeatherApi.jsx";
+import { fetchCityCoordinates, fetchCurrentWeather } from "../weatherApi.jsx";
 
 function Weather() {
   const [city, setCity] = useState("");
